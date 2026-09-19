@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 api_key = os.getenv("ECOS_API_KEY")
-print("불러온 키:", repr(api_key))
 
 url = f"https://ecos.bok.or.kr/api/StatisticTableList/{api_key}/json/kr/1/3000/"
 resp = requests.get(url)
